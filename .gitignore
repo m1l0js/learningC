@@ -1,55 +1,31 @@
-# Prerequisites
-*.d
-
-# Object files
+# ─── Compilation ───────────────────────
 *.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
 *.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
 *.so
-*.so.*
 *.dylib
-
-# Executables
-*.exe
 *.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+*.s
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+main
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# ─── CMake ────────────────────────────
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+build/
+_build/
 
-# debug information files
-*.dwo
+# ─── CLion / JetBrains ────────────────
+.idea/
+
+# ─── macOS ────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+*.orig         # archivos de merge fallido
+
+# ─── Debug ───────────────────────
+*.dSYM/        # símbolos de debug de macOS
+core           # core dumps
