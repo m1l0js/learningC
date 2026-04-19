@@ -1,12 +1,40 @@
-# ─── Compilation ───────────────────────
+# ─── Compiled and object files ────────
+*.d
 *.o
+*.obj
+*.elf
+*.gch
+*.pch
+*.dwo
+*.su
+
+# ─── Linker output ────────────────────
+*.ilk
+*.map
+*.exp
+
+# ─── Libraries ────────────────────────
 *.a
+*.la
+*.lo
+*.dylib        # macOS
 *.so
-*.dylib
+*.so.*
+
+# ─── Executables ──────────────────────
 *.out
+*.app
+*.hex
+main           # your executable without extension
+
+# ─── Generated assembly ───────────────
 *.s
 
-main
+# ─── macOS debug ──────────────────────
+*.dSYM/
+*.pdb
+*.idb
+core           # core dumps
 
 # ─── CMake ────────────────────────────
 cmake-build-*/
@@ -24,8 +52,4 @@ _build/
 .DS_Store
 .AppleDouble
 .LSOverride
-*.orig         # archivos de merge fallido
-
-# ─── Debug ───────────────────────
-*.dSYM/        # símbolos de debug de macOS
-core           # core dumps
+*.orig
